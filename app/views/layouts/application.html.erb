@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bucketlist</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <div class="container">
+      <img src="https://user-images.githubusercontent.com/49769068/83082738-df70f480-a049-11ea-8b2d-747de7054183.png" style="width:100%"alt="">
+      <h1 class="top-left">TravelHub</h1>
+      <a href="/" class="top-right">Home</a>
+      <h1 class="title-text">TravelHub</h1>
+    </div>
+    <%= yield %>
+  </body>
+</html>

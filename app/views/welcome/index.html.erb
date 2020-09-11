@@ -1,0 +1,19 @@
+<br>
+<div class="container-fluid px-0">
+  <div class="row">
+    <% @countries.each do |country| %>
+    <div class="col-md-4 padding-0">
+      <div class="card bg-light mb-3">
+        <div class="card-header"><h2 style="text-align:center"><%=link_to country.name, "/country/#{country.id}"%></h2></div>
+        <div class="card-body">
+      <div style="text-align:center">
+          <%= country.pictureurl.html_safe %>
+      </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    </div>
+    <% end %>
+  </div>
+</div>
