@@ -1,3 +1,3 @@
 class Country < ApplicationRecord
-  has_many :areas
+  has_many :activities
 end

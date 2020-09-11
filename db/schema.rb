@@ -10,22 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_10_234231) do
+ActiveRecord::Schema.define(version: 2020_09_11_043948) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "areas", force: :cascade do |t|
+  create_table "activities", force: :cascade do |t|
     t.string "name"
     t.string "description"
     t.string "pictureurl"
+    t.bigint "country_id"
+    t.index ["country_id"], name: "index_activities_on_country_id"
   end
 
   create_table "countries", force: :cascade do |t|
     t.string "name"
     t.string "pictureurl"
-    t.integer "area_id"
-    t.index ["area_id"], name: "index_countries_on_area_id"
   end
 
+  add_foreign_key "activities", "countries"
 end

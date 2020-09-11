@@ -1,0 +1,21 @@
+<br>
+<h1 style="text-align:center"><%=@country.name%>: Things to Do!</h1>
+<div class="container-fluid px-0">
+  <div class="row">
+    <% @country.activities.each do |activity| %>
+    <div class="col-md-4 padding-0">
+      <div class="card">
+        <div class="card-header"><h2 style="text-align:center"><%=activity.name%></h2></div>
+        <div class="card-body">
+      <div style="text-align:center">
+          <%= activity.pictureurl.html_safe %>
+      </div>
+      <p style = "font-family: 'Source Sans Pro', sans-serif; text-align:center"><%=activity.description%></p>
+      </div>
+    </div>
+    <br>
+    <br>
+    </div>
+    <% end %>
+  </div>
+</div>

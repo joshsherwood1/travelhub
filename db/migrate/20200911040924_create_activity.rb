@@ -1,6 +1,6 @@
-class CreateArea < ActiveRecord::Migration[5.2]
+class CreateActivity < ActiveRecord::Migration[5.2]
   def change
-    create_table :areas do |t|
+    create_table :activities do |t|
       t.string :name
       t.string :description
       t.string :pictureurl
