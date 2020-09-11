@@ -36,13 +36,21 @@
 
  .top-left {
    position: absolute;
-   top: 8px;
+   top: 33px;
    left: 45px;
    color: #fbed55;
    background-color: #e0332f;
    font-size:5vw;
    font-family: 'Raleway', sans-serif;
    opacity: 0.8;
+ }
+
+ .top-left-icons {
+   position: absolute;
+   top: 33px;
+   right: 145px;
+   color: #fbed55;
+   font-family: 'Raleway', sans-serif;
  }
 
  .top-right {
@@ -57,7 +65,7 @@
 
  .title-text {
    position: absolute;
-   top: 8px;
+   top: 33px;
    left: 45px;
    color: #fbed55;
    font-size:5vw;
